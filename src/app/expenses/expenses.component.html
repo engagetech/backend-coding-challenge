@@ -1,0 +1,41 @@
+<div>
+	<h2>Expenses</h2>
+
+	<h3>Add an expense</h3>
+	<form>
+		<ul>
+			<li>
+				<label>Date</label>
+				<input type="text" [(ngModel)]="newExpense.date" name="date" placeholder="dd/mm/yyyy" />
+			</li>
+			<li>
+				<label>Amount</label>
+				<input type="text" [(ngModel)]="newExpense.amount" name="amount" placeholder="00.00" />
+			</li>
+			<li>
+				<label>Reason</label>
+					<textarea [(ngModel)]="newExpense.reason" name = "reason" placeholder="why oh why?"></textarea>
+			</li>
+			<li>
+				<label></label>
+				<button (click)="saveExpense()" class="solid">Save Expense</button> <button (click)="clearExpense()">cancel</button>
+			</li>
+		</ul>
+	</form>
+
+	<h3>Submitted expenses</h3>
+	<table class="list-table expenses-data">
+		<tr>
+			<th class="col-4">Date</th>
+			<th class="col-4 figures">Amount (inc. VAT)</th>
+			<th class="col-2 figures">VAT</th>
+			<th class="col-15">Reason</th>
+		</tr>
+		<tr *ngFor="let expense of expenses" class="body-row">
+			<td class="col-4">{{expense.date | date:'dd MMM yyyy'}}</td>
+			<td class="col-4 figures">{{expense.amount | currency:"&pound;"}}</td>
+			<td class="col-2 figures">{{expense.vat | currency:"&pound;"}}</td>
+			<td class="col-15">{{expense.reason}}</td>
+		</tr>
+	</table>
+</div>
