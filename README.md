@@ -45,7 +45,7 @@ By email, the front end developer of the team let you know that she already work
 >You should only have to create the right endpoints in your service for the frontend application to call them, and everything should then work fine!...
 >Unless I forgot something of course, in which case you may be able to reach me on the beach_
 >
->_P.S. You can start the frontend by running `ng serve` this will compile the code and launch a webserver on `localhost:4200`. You are free to host the files in your backend of course, then you will only need to build the source by running `gulp dev`. If you want to have a look at the code that is calling the endpoints then you can find this in `src/app/expenses.service.ts`_
+>_P.S. You can start the frontend by running `ng serve` this will compile the code and launch a webserver on `localhost:4200`. If you want to have a look at the code that is calling the endpoints then you can find this in `src/app/expenses.service.ts`_
 >
 >_P.P.S. In case you are stuck, you need to prep the project with `npm install -g @angular/cli && npm install`. I'll leave it to you how to get Node on your system ;-)_
 >
