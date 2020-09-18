@@ -98,13 +98,13 @@ Questions
 ---------
 
 ##### What application servers can I use?
-We use DropWizard but gradually moving to Spring. Spring is our preferrence but you should pick something you are familiar with.
+It’s totally up to you! Pick something you are good at. We use Dropwizard and we’re gradually moving to Spring.
 
 ##### What libraries can I use?
-That’s entirely up to you, as long as they’re Open Source Software (OSS). We’ll ask you to explain the choices you’ve made. Please pick something you're familiar with, as you'll need to be able to discuss it.
+That’s again entirely up to you, as long as they’re Open Source Software (OSS). We’ll ask you to explain the choices you’ve made. Please pick something you're familiar with, as you'll need to be able to discuss it.
 
 ##### What database should I use?
-MySQL or PostgreSQL. 
+Please use MySQL or PostgreSQL. 
 
 ##### What will you be grading me on?
 Elegance, robustness, understanding of the technologies you use, tests, security.
